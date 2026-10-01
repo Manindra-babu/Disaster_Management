@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" width="200" height="48" fill="none">
+  <!-- Symbol -->
+  <rect x="4" y="4" width="40" height="40" rx="8" fill="#0F172A" />
+  <line x1="4" y1="24" x2="44" y2="24" stroke="#1E293B" stroke-width="1" />
+  <line x1="24" y1="4" x2="24" y2="44" stroke="#1E293B" stroke-width="1" />
+  <path d="M24 10L36 24L24 38L12 24Z" stroke="#2563EB" stroke-width="2.5" stroke-linejoin="round" fill="none" />
+  <circle cx="24" cy="24" r="5" fill="#DC2626" />
+  <circle cx="24" cy="14" r="2" fill="#60A5FA" />
+  <circle cx="34" cy="24" r="2" fill="#60A5FA" />
+  <circle cx="24" cy="34" r="2" fill="#60A5FA" />
+  <circle cx="14" cy="24" r="2" fill="#60A5FA" />
+  
+  <!-- Logotype -->
+  <text x="56" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="800" letter-spacing="1.5" fill="#0F172A">RESQ</text>
+  <rect x="136" y="16" width="56" height="18" rx="3" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1" />
+  <text x="141" y="29" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="700" letter-spacing="0.8" fill="#1D4ED8">COMMAND</text>
+</svg>

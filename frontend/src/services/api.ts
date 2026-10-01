@@ -4,7 +4,10 @@ import type {
   Alert, AuditLog, OperationalKPIs
 } from '../types';
 
-const RAW_API_URL = import.meta.env.VITE_API_URL || '';
+let RAW_API_URL = import.meta.env.VITE_API_URL || '';
+if (RAW_API_URL && !RAW_API_URL.startsWith('http://') && !RAW_API_URL.startsWith('https://')) {
+  RAW_API_URL = `https://${RAW_API_URL}`;
+}
 const API_BASE = RAW_API_URL ? `${RAW_API_URL.replace(/\/$/, '')}/api` : '/api';
 
 export const api = {

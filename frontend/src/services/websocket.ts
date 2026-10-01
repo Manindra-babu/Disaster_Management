@@ -20,8 +20,9 @@ class WebSocketClient {
     if (!wsUrl) {
       const apiUrl = import.meta.env.VITE_API_URL;
       if (apiUrl) {
-        const wsProto = apiUrl.startsWith('https:') ? 'wss:' : 'ws:';
         const cleanHost = apiUrl.replace(/^https?:\/\//, '').replace(/\/$/, '');
+        const isSecure = apiUrl.startsWith('https:') || window.location.protocol === 'https:' || !apiUrl.startsWith('http:');
+        const wsProto = isSecure ? 'wss:' : 'ws:';
         wsUrl = `${wsProto}//${cleanHost}/ws`;
       } else {
         const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';

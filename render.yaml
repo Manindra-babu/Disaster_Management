@@ -2,7 +2,7 @@ services:
   # Backend API Web Service
   - type: web
     name: resq-backend
-    env: python
+    runtime: python
     region: oregon
     plan: free
     branch: main
@@ -23,8 +23,9 @@ services:
         value: gemini-3.8-flash
 
   # Frontend Static Site
-  - type: static
+  - type: web
     name: resq-frontend
+    runtime: static
     region: oregon
     plan: free
     branch: main
